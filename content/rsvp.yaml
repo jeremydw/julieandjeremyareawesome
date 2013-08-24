@@ -5,3 +5,20 @@ properties:
 content:
   body: |
     <p>Hello, please RSVP!
+    I...
+    
+    Accept happily
+    Decline sadly
+    
+    Names of people attending (including yourself):
+    
+    (check the box if any people are children under the age of 12 and put their ages into the field next to the box)
+    
+    Meal preference (for each person):
+    chicken
+    beef
+    vegetarian
+    
+    Any other dietary restrictions?
+    
+    What's a song that gets you dancing?
