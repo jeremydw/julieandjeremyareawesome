@@ -8,11 +8,7 @@ default:
 
   - route: page
     params: 
-      path: schedule
-
-  - route: page
-    params: 
-      path: travel
+      path: logistics
 
   - route: page
     params: 
