@@ -1,0 +1,7 @@
+properties:
+  title: RSVP
+  title_nav: RSVP
+
+content:
+  body: |
+    <p>Hello, please RSVP!

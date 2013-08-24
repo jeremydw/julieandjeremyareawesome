@@ -1,0 +1,31 @@
+properties:
+  title: Travel
+
+content:
+  body: |
+
+    <h2>Wedding venue</h2>
+    <p>Our wedding will take place at <b>Paradise Ridge Winery</b> in Santa Rosa, California! Santa Rosa is about a one hour drive north of San Francisco. It is located in California's wine country.
+
+    <h2>Airports</h2>
+    <p>There are a few airports that you can use. The most common option is likely the San Francisco Airport (SFO), but you may also choose to fly to Oakland or Sacramento.
+    <p>If you are flying from California (or nearby), you may choose to fly to Sonoma Airport directly (which is very close to Santa Rosa).
+    <p>If you fly in Saturday morning, there will be enough time for you to rent a car and travel to Santa Rosa by the greeting time (5pm).
+
+    <table>
+      <tr>
+        <td>
+        <td>
+    </table>
+
+    <h2>Hotels</h2>
+
+    <h3>Hilton Sonoma Wine Country</h3>
+    <p>This is the hotel where the wedding party will stay. It is very close to the wedding venue and about a 5-minute drive to downtown Santa Rosa.
+    <p><a href="http://www.hiltonsonomahotel.com/">http://www.hiltonsonomahotel.com/</a>
+
+    <h3>Hyatt Santa Rosa</h3>
+    <p><a href="http://vineyardcreek.hyatt.com/en/hotel/home.html?icamp=vineyardcreekredirect">http://vineyardcreek.hyatt.com/</a>
+
+    <h3>Courtyard Marriott Santa Rosa</h3>
+    <p><a href="http://www.marriott.com/hotels/travel/stscy-courtyard-santa-rosa/">http://www.marriott.com/hotels/travel/stscy-courtyard-santa-rosa/</a>

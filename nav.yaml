@@ -1,0 +1,27 @@
+default:
+
+  - route: home
+
+  - route: page
+    params: 
+      path: about-us
+
+  - route: page
+    params: 
+      path: schedule
+
+  - route: page
+    params: 
+      path: travel
+
+  - route: page
+    params: 
+      path: rsvp
+
+  - route: page
+    params: 
+      path: photos
+
+  - route: page
+    params: 
+      path: gifts

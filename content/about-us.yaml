@@ -1,0 +1,16 @@
+properties:
+  title: About us
+
+content:
+  body: |
+
+    <h2>How we met</h2>
+    <p>Julie and Jeremy met in 2009 while working on the same project at Google. At the time, Julie was working on an April Fools' joke for Google Maps. Our paths crossed when Jeremy was debugging a technical problem with one of the web pages and after everything was resolved, Julie proudly announced that – for the April Fools' joke – if you looked at a map in China you could find a panda and pick it up by the "scruff of its neck".
+    <p>Later on, Julie needed a website for her ne wproject. She wanted Jeremy to build it for her, but he was too busy. When Jeremy said no, they went to his manager. When he said no, they went to <i>his</i> manager and finally Jeremy agreed. From there, once they began working together, it was <b><em>love at first site</em></b>.
+
+    <p><img class="banner" src="/public/google.jpg">
+
+    <h2>Three years later</h2>
+    <p>Jeremy proposed to Julie exactly on their three year anniversary in front of the Golden Gate Bridge (this is where we first asked each other out!). Julie sleeps in on weekends, so Jeremy woke up early and frantically checked the weather all morning to make sure it wasn't too foggy. In order to buy some time until the fog cleared up, Jeremy took Julie to exercise at a gym nearby.
+
+    <p><img class="banner" src="/public/threeyears.jpg">

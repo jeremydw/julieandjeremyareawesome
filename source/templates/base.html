@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Julie and Jeremy are getting married</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:regular,regularitalic,bold" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link rel="stylesheet" href="/public/main.css">
+<body>
+
+  <div class="wrap">
+    <header>
+      <img src="/public/jeremy.svg" class="characters jeremy">
+      <img src="/public/julie.svg" class="characters julie">
+      <h1>Julie & Jeremy</h1>
+      <div class="subtitle">
+        <div>are getting married</div>
+        <div>october 19th, 2013</div>
+      </div>
+      <nav class="clearfix">
+        <ul>
+          {% for controller in nav %}
+            <li><a href="{{controller.url}}">{{controller.title_nav}}</a>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="hr"><img src="/public/hr.png"></div>
+    </header>
+
+    <section>
+      <div class="intro">
+
+        {{content.body|safe}}
+
+        {% if content.events %}
+          {% for event in content.events %}
+          <h2>{{event.day}}</h2>
+          {% if event.place %}
+            <p><a href="{{event.place_url}}">{{event.place}}</a>
+          {% endif %}
+            <table>
+              {% for time in event.times %}
+                <tr>
+                  <td>{{time.time}}
+                  <td>{{time.content}}
+              {% endfor %}
+            </table>
+          {% endfor %}
+        {% endif %}
+
+      </div>
+    </section>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-41097108-1', 'julieandjeremyareawesome.com');
+    ga('send', 'pageview');
+  </script>

@@ -1,0 +1,26 @@
+properties:
+  title: Schedule
+
+content:
+
+  events:
+
+  - day: Saturday, 10/19/2013
+    place: Paradise Ridge Winery
+    place_url: https://www.google.com/maps/preview#!q=Paradise+Ridge+Winery%2C+4545+Thomas+Lake+Harris+Drive%2C+Santa+Rosa%2C+CA&data=!1m4!1m3!1d12345!2d-122.7269103!3d38.4916597!4m22!1m9!4m8!1m3!1d99757!2d-122.4376!3d37.7577!3m2!1i1296!2i759!4f13.1!5m11!1m10!1sParadise+Ridge+Winery%2C+4545+Thomas+Lake+Harris+Drive%2C+Santa+Rosa%2C+CA!4m8!1m3!1d99757!2d-122.4376!3d37.7577!3m2!1i1296!2i759!4f13.1
+    times:
+    - time: 5:00pm
+      content: Family and friends arrive
+    - time: 5:30pm
+      content: Wedding ceremony
+    - time: 6:30pm
+      content: Hors d'oeuvres and mingling
+    - time: 7:00pm
+      content: Dinner
+    - time: 9:00pm
+      content: Dancing and merriment
+
+#  - day: Sunday, 10/19/2013
+#    times:
+#    - time: 5:00pm
+#      content: Family and friends arrive

@@ -1,0 +1,25 @@
+domains:
+
+- www.julieandjeremyareawesome.com
+
+routes:
+
+- controller: page
+  path: /
+  name: home
+
+  source: templates/base.html
+  content: content/home.yaml
+
+- controller: page
+  path: /<path>/
+  name: page
+
+  source: templates/base.html
+  content: content/:path.yaml
+
+- controller: static
+  path: /public/<path:name>
+  name: static
+
+  source: public/:name

@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+
+html,
+body {
+  height: 100%;
+}
+
+html,
+body,
+div.wrap {
+  min-height: 100%;
+}
+
+a {
+  color: #C44172;
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 300;
+  margin-top: 0;
+  color: #666;
+}
+
+body {
+  background: url(bg.png);
+  color: #333;
+  font: normal 15px "Raleway", arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body p {
+  font-family: 'Helvetica Neue', 'Lucida Grande', 'Arial', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+header {
+  text-align: center;
+}
+
+div.wrap {
+  background: #fff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 650px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+section div.wrap {
+  padding: 0 50px 50px 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #666;
+}
+
+label.small {
+  margin: 0;
+}
+
+form .field {
+  margin-bottom: 15px;
+}
+
+form .field input[type=text],
+textarea {
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  color: #666;
+  font: normal 17px "Roboto", arial, sans-serif;
+  font-weight: 300;
+  padding: 10px;
+  min-width: 300px;
+  outline: none;
+}
+
+form .field input[type=text]:focus,
+textarea:focus {
+  border-color: #99B3D5;
+}
+
+.intro {
+  padding: 20px 0;
+}
+
+.hr {
+  margin: 25px 0;
+  text-align: center;
+}
+
+textarea {
+  font-size: 13px;
+}
+
+.bar {
+  margin-top: 35px;
+}
+
+.form.radios {
+  margin: 20px 0;
+}
+
+form .bar input[type=button],
+form .bar input[type=submit] {
+  background: #99B3D5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  min-width: 150px;
+  padding: 10px 15px;
+  -webkit-transition: all 150ms ease-out;
+}
+
+form .bar input[type=button]:hover,
+form .bar input[type=submit]:hover {
+  background: #132641;
+}
+
+.hidden {
+  display: none;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+img.characters {
+  width: 100px;
+  margin: 20px;
+}
+
+img.characters.jeremy {
+  float: right;
+}
+
+img.characters.julie {
+  float: left;
+}
+
+h1 {
+  color: #15273F;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.25em;
+  color: #5195CC;
+}
+
+nav {
+  margin: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table tr td {
+  padding: 5px 10px;
+}
+
+img.banner {
+  border-radius: 20px;
+  margin: 20px 0;
+  max-width: 100%;
+}
