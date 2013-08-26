@@ -1,25 +1,29 @@
 domains:
 
+- staging.julieandjeremyareawesome.com
 - www.julieandjeremyareawesome.com
 
 routes:
 
-- controller: page
-  path: /
-  name: home
+  /:
 
-  source: templates/base.html
-  content: content/home.yaml
+    controller: page
+    name: home
+    properties:
+      view: /views/base.html
+      content: /content/home.yaml
 
-- controller: page
-  path: /<path>/
-  name: page
+  /public/<grow:basename>:
 
-  source: templates/base.html
-  content: content/:path.yaml
+    controller: static
+    name: static
+    properties:
+      view: /public/:basename
 
-- controller: static
-  path: /public/<path:name>
-  name: static
+  /<grow:slug>/:
 
-  source: public/:name
+    controller: page
+    name: page
+    properties:
+      view: /views/base.html
+      content: /content/:slug.yaml

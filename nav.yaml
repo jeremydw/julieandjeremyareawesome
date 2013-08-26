@@ -4,20 +4,20 @@ default:
 
   - route: page
     params: 
-      path: about-us
+      slug: about-us
 
   - route: page
     params: 
-      path: logistics
+      slug: logistics
 
   - route: page
     params: 
-      path: rsvp
+      slug: rsvp
 
   - route: page
     params: 
-      path: photos
+      slug: photos
 
   - route: page
     params: 
-      path: gifts
+      slug: gifts

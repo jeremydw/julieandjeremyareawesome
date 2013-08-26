@@ -18,7 +18,7 @@ a {
 
 h2 {
   font-weight: 300;
-  margin-top: 0;
+  margin: 50px 0;
   color: #666;
 }
 
@@ -88,6 +88,16 @@ textarea {
   outline: none;
 }
 
+table input[type=text] {
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  color: #666;
+  font: normal 13px "Roboto", arial, sans-serif;
+  font-weight: 300;
+  padding: 5px;
+  outline: none;
+}
+
 form .field input[type=text]:focus,
 textarea:focus {
   border-color: #99B3D5;
@@ -125,6 +135,15 @@ form .bar input[type=submit] {
   min-width: 150px;
   padding: 10px 15px;
   -webkit-transition: all 150ms ease-out;
+}
+
+form .bar.small {
+  margin: -15px 0 20px 0;
+}
+
+form .bar.small input[type=button] {
+  font-size: 11px;
+  padding: 5px 7px;
 }
 
 form .bar input[type=button]:hover,
@@ -208,4 +227,12 @@ img.banner {
   border-radius: 20px;
   margin: 20px 0;
   max-width: 100%;
+}
+
+form table {
+  width: 100%;
+}
+
+form table tr td {
+  padding: 5px 10px 5px 0;
 }

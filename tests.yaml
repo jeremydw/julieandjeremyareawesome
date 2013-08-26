@@ -1,0 +1,8 @@
+tests:
+
+  - route: home
+    assertInHtml:
+      - About us
+      - Travel &amp; Schedule
+      - Our wedding is on
+  
