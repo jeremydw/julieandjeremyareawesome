@@ -6,3 +6,10 @@ tests:
       - Travel &amp; Schedule
       - Our wedding is on
   
+  - route: redirect_guest
+    assertInHtml:
+      - window.location = '/rsvp/';
+  
+  - route: redirect_weddingparty
+    assertInHtml:
+      - window.location = '/rsvp/';

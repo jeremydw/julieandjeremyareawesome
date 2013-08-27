@@ -13,6 +13,20 @@ routes:
       view: /views/base.html
       content: /content/home.yaml
 
+  /guest/:
+  
+    controller: page
+    name: redirect_guest
+    properties:
+      view: /views/redirect.html
+
+  /weddingparty/:
+  
+    controller: page
+    name: redirect_weddingparty
+    properties:
+      view: /views/redirect.html
+
   /public/<grow:basename>:
 
     controller: static
