@@ -1,0 +1,11 @@
+name: Julie & Jeremy Are Awesome
+grow_version: ">=0.7.4"
+
+static_dirs:
+- static_dir: /source/static/
+  serve_at: /public/
+
+deployments:
+  julieandjeremyareawesome.com:
+    destination: gcs
+    bucket: julieandjeremyareawesome.com

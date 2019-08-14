@@ -17,8 +17,8 @@
       </div>
       <nav class="clearfix">
         <ul>
-          {% for controller in nav %}
-            <li><a href="{{controller.url}}">{{controller.title_nav}}</a>
+          {% for item in doc.collection %}
+            <li><a href="{{item.url.path}}">{{item.titles('nav')}}</a>
           {% endfor %}
         </ul>
       </nav>
@@ -27,25 +27,7 @@
 
     <section>
       <div class="intro">
-
-        {{content.body|safe}}
-
-        {% if content.events %}
-          {% for event in content.events %}
-          <h2>{{event.day}}</h2>
-          {% if event.place %}
-            <p><a href="{{event.place_url}}">{{event.place}}</a>
-          {% endif %}
-            <table>
-              {% for time in event.times %}
-                <tr>
-                  <td>{{time.time}}
-                  <td>{{time.content}}
-              {% endfor %}
-            </table>
-          {% endfor %}
-        {% endif %}
-
+        {{doc.html|render|safe}}
       </div>
     </section>
   </div>

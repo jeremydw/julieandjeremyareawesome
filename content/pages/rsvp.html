@@ -1,0 +1,145 @@
+---
+$title: RSVP
+$order: 3
+---
+<form action="https://docs.google.com/forms/d/1908F-AjbGuHPKQMu-Gz4OD6_I5rZcevs4fbv7aEEJNk/formResponse" method="POST" id="form">
+
+<input type="hidden" name="entry.173597894" id="hidden">
+
+<p>Please fill out the form below. If you cannot attend our wedding, please just enter your full name when you send in the RSVP. Thank you!
+<p>
+
+<label>Response</label>
+
+<div class="form radios">
+  <label class="small">
+    <input type="radio" onchange="setEnabled(true)" name="entry.1660695809" value="Yes"> Accept happily
+  </label>
+  <label>
+    <input type="radio" onchange="setEnabled(false)" name="entry.1660695809" value="No"> Decline sadly
+  </label>
+</div>
+
+<div class="form radios show-on-accept" style="display: none;" id="weddingparty">
+
+  <label>Special events for members of the wedding party</label>
+
+  <p>
+  <label class="small">
+    <input type="checkbox" name="entry.737759823" value="Brunch"> Yes! I can attend the rehearsal dinner on <b>Friday, October 18th</b> at 7pm. (More details to follow.)
+  </label>
+
+  <p>
+  <label class="small">
+    <input type="checkbox" name="entry.737759823" value="Rehearsal dinner"> Yes! I can attend the Sunday brunch on <b>Sunday, October 20th</b> at 10:30am at the Sonoma Hilton. (More details to follow.)
+  </label>
+
+</div>
+
+<table>
+  <tr>
+    <td>Full name
+    <td class="show-on-accept" style="display: none;">Meal preference
+    <td class="show-on-accept" style="display: none;">Under 12 years old?
+  <tbody id="rows">
+    <tr class="response-row">
+      <td>
+        <input type="text" class="name">
+      <td class="show-on-accept" style="display: none;">
+        <select class="meal">
+          <option>
+          <option value="Chicken">Chicken
+          <option value="Beef">Beef
+          <option value="Vegetarian">Vegetarian
+      <td class="show-on-accept" style="display: none;">
+        <input type="checkbox" class="under12">
+    </tbody>
+</table>
+
+  <div class="bar small show-on-accept" style="display: none;">
+    <input type="button" value="Add another guest" onclick="addRow()">
+  </div>
+
+  <div class="show-on-accept" style="display: none;">
+
+    <label>Any other dietary restrictions?</label>
+    <div class="field">
+      <input type="text" name="entry.1727584223">
+    </div>
+    
+    <label>What's a song that gets you dancing?</label>
+    <div class="field">
+      <input type="text" name="entry.1372944503">
+    </div>
+  </div>
+
+  <div class="show-on-change" style="display: none;">
+
+    <label>Any other comments or questions?</label>
+    <div class="field">
+      <textarea name="entry.642417917"></textarea>
+    </div>
+
+  </div>
+
+  <div class="bar">
+    <p><input type="submit" value="Send RSVP">
+  </div>
+
+</form>
+
+<table style="display: none;">
+  <tbody id="template">
+  <tr class="destroy-on-decline response-row">
+    <td>
+      <input type="text" class="name">
+    <td class="show-on-accept" style="display: none;">
+      <select class="meal">
+        <option>
+        <option value="Chicken">Chicken
+        <option value="Beef">Beef
+        <option value="Vegetarian">Vegetarian
+    <td class="show-on-accept" style="display: none;">
+      <input type="checkbox" class="under12">
+  </tbody>
+</table>
+
+<script>
+
+  if (window.location.search.indexOf('weddingparty') == -1) {
+    $('#weddingparty').remove();
+  }
+  
+  var submit = function(e) {
+    var resp = [];
+    $.each($('#rows .response-row'), function(i, row) {
+      console.log(row);
+      var name = row.getElementsByClassName('name')[0].value;
+      var food = row.getElementsByClassName('meal')[0].value;
+      var isUnder12 = row.getElementsByClassName('under12')[0].checked;
+      resp.push(name + ', ' + food + ', ' + isUnder12);
+    });
+    people = resp.join('\n');
+    document.getElementById('hidden').value = people;
+  };
+
+  document.getElementById('form').onsubmit = submit;
+
+  var addRow = function() {
+    $('#rows').append($('#template').html());
+  };
+
+  var setEnabled = function(enabled) {
+    $('.show-on-change').show();
+    if (enabled) {
+      accept = true;
+      $('.show-on-accept').show();
+      $('.show-on-decline').hide();
+    } else {
+      accept = false;
+      $('.show-on-decline').show();
+      $('.show-on-accept').hide();
+      $('#rows .destroy-on-decline').remove();
+    }
+  };
+</script>
